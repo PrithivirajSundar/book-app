@@ -28,7 +28,7 @@ public class BookDAOImpl implements BookDAO {
 	}
 	public Set<Book> findAll(){
 	try {
-	pstmt=con.prepareStatement("select * from xx_book_2596");
+	pstmt=con.prepareStatement("select * from book_2596");
 	rs=pstmt.executeQuery();
 	bookset=new HashSet<>();
 	while(rs.next()) {

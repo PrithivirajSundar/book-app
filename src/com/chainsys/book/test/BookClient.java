@@ -27,17 +27,17 @@ public class BookClient {
 			System.out.println(bookset);
 			break;
 			
-//		case 2:
-//			System.out.println("Find book by id");
-//			System.out.println("Enter the book id");
-//			BId=scanner.nextInt();
-//			try {
-//			Book book =service.findById(BId);
-//			System.out.println(book);
-//			}catch(BookNotFoundException e) {
-//				System.out.println(e);
-//			}
-//			break;
+		case 2:
+			System.out.println("Find book by id");
+			System.out.println("Enter the book id");
+			BId=scanner.nextInt();
+			try {
+			Book book =service.findById(BId);
+			System.out.println(book);
+			}catch(BookNotFoundException e) {
+				System.out.println(e);
+			}
+			break;
 //			
 //		case 3:
 //			System.out.println("Adding new book");
