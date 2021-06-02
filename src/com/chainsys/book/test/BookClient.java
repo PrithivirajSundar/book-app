@@ -49,19 +49,19 @@ public class BookClient {
 			System.out.println(bookset);
 			break;
 ////			
-//		case 4:
-//			System.out.println("Update publisher date based on book id and name");
-//			date="03/26/1974";
-//			dateFormat=DateTimeFormatter.ofPattern("MM/dd/yyyy");
-//			Book book1 = new Book(1002,"MARTIN",LocalDate.parse(date,dateFormat));
-//		try {
-//			service.update(book1);
-//			bookset=service.findAll();
-//			System.out.println(bookset);
-//		    }catch(BookNotFoundException e) {
-//			System.out.println(e);		
-//			}
-//		break;
+		case 4:
+			System.out.println("Update book name based on book id");
+			date="06/25/1999";
+			dateFormat=DateTimeFormatter.ofPattern("MM/dd/yyyy");
+			Book book1 = new Book(1000,"THE LION KING",LocalDate.parse(date,dateFormat));
+		try {
+			service.update(book1);
+			bookset=service.findAll();
+			System.out.println(bookset);
+		    }catch(BookNotFoundException e) {
+			System.out.println(e);		
+			}
+		break;
 //		case 5:
 //			System.out.println("delete book based on book id");
 //			BId=scanner.nextInt();
