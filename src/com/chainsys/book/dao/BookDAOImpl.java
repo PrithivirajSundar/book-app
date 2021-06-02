@@ -69,9 +69,9 @@ public class BookDAOImpl implements BookDAO {
 	}
 	public void update(Book book) {
 		try {
-			pstmt=con.prepareStatement("update book_2596 set BId=?,BName=?");
-			pstmt.setInt(1, book.getBId());
-			pstmt.setString(2, book.getBName());
+			pstmt=con.prepareStatement("update book_2596 set BName=? where BId=?");
+			pstmt.setString(1, book.getBName());
+			pstmt.setInt(2, book.getBId());
 			pstmt.executeUpdate();
 		}catch(SQLException e) {
 			e.printStackTrace();

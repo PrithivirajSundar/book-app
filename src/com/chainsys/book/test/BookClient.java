@@ -62,17 +62,18 @@ public class BookClient {
 			System.out.println(e);		
 			}
 		break;
-//		case 5:
-//			System.out.println("delete book based on book id");
-//			BId=scanner.nextInt();
-//			try {
-//				service.delete(BId);
-//				bookset=service.findAll();
-//				System.out.println(bookset);
-//			}catch(BookNotFoundException e) {
-//				System.out.println(e);
-//			}
-//		break;
+		case 5:
+			System.out.println("delete book based on book id");
+			System.out.println("enter book id:");
+			BId=scanner.nextInt();
+			try {
+				service.delete(BId);
+				bookset=service.findAll();
+				System.out.println(bookset);
+			}catch(BookNotFoundException e) {
+				System.out.println(e);
+			}
+		break;
 	}
 
 }
