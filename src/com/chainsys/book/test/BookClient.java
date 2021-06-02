@@ -38,21 +38,22 @@ public class BookClient {
 				System.out.println(e);
 			}
 			break;
-//			
-//		case 3:
-//			System.out.println("Adding new book");
-//			date="07/25/1999";
-//			dateFormat=DateTimeFormatter.ofPattern("MM/dd/yyyy");
-//			Book book = new Book(4,"success",LocalDate.parse(date,dateFormat));
-//			bookset=service.findAll();
-//			System.out.println(bookset);
-//			break;
-//			
+			
+		case 3:
+			System.out.println("Adding new book");
+			date="06/25/1999";
+			dateFormat=DateTimeFormatter.ofPattern("MM/dd/yyyy");
+			Book book = new Book(1003,"success",LocalDate.parse(date,dateFormat));
+			service.save(book);
+			bookset=service.findAll();
+			System.out.println(bookset);
+			break;
+////			
 //		case 4:
 //			System.out.println("Update publisher date based on book id and name");
 //			date="03/26/1974";
 //			dateFormat=DateTimeFormatter.ofPattern("MM/dd/yyyy");
-//			Book book1 = new Book(1,"medical",LocalDate.parse(date,dateFormat));
+//			Book book1 = new Book(1002,"MARTIN",LocalDate.parse(date,dateFormat));
 //		try {
 //			service.update(book1);
 //			bookset=service.findAll();

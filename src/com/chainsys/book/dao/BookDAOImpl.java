@@ -58,7 +58,7 @@ public class BookDAOImpl implements BookDAO {
 	
 	public void save(Book book) {
 		try {
-			pstmt=con.prepareStatement("select * from book_2596 where ?,?,?");
+			pstmt=con.prepareStatement("insert into book_2596 values (?,?,?)");
 			pstmt.setInt(1,book.getBId());
 			pstmt.setString(2,book.getBName());
 			pstmt.setDate(3,Date.valueOf(book.getpublisherdate()));
